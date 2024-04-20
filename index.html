@@ -1,0 +1,43 @@
+<!-- CODIGO E DESIGN FEITO TOTALMENTE POR VICTOR HUGO -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto WEB - 2 SEMESTRE</title>
+    <link rel="stylesheet" href="main_css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <form name="formulario" id="form">
+        <h2>Escolha uma senha</h2>
+        <div>
+            <input id="senha" type="password" name="senha" placeholder="Senha">
+            <i class="fa-solid fa-eye" id="icon" onclick="primarySecurity()"></i>
+            <i class="fa-solid fa-lock" id="first-icon"></i>
+        </div>
+        <div>
+            <input id="confirm-pass" type="password" name="confirmar_senha" placeholder="Confirme a senha">
+            <i class="fa-solid fa-eye" id="icon2" onclick="secondSecurity()"></i>
+            <i class="fa-solid fa-lock" id="second-icon"></i>
+        </div>
+        <input type="submit" onclick="return validarPass()"></input>
+        <section>
+            <p>Dicas para uma senha forte: <br> <a href="senha.html">Clique aqui!</a></p>
+        </section>
+        <footer>
+            <h3>Criadores:</h2>
+                <p>Victor_33198519</p>
+                <p>Gabriel_33541272</p>
+        </footer>
+    </form>
+    <script src="main_js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
